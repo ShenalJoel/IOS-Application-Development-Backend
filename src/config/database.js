@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURI =
-  'mongodb+srv://shenaljoel:a1234@assignments.atv2o7d.mongodb.net/iosassignment?retryWrites=true&w=majority&appName=assignments';
-
+const mongoURI = process.env.MONGODB_URI;
 const options = {
   //   useNewUrlParser: true,
   //   useUnifiedTopology: true,
